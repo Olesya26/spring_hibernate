@@ -9,7 +9,7 @@ public class Car {
     @Id
     @Column(name = "id_car")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
 
     @Column(name = "car_series")
     private int series;
@@ -41,7 +41,7 @@ public class Car {
         this.series = series;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
