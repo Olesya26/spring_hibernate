@@ -28,7 +28,7 @@ public class UserDaoImp implements UserDao {
     }
 
     @Override
-    public User getUserByCar(String model, int series) {
+    public User getUserBySeriesAndModelCar(String model, int series) {
         return sessionFactory
                 .getCurrentSession()
                 .createQuery("select user from User user inner join user.car c where " +
